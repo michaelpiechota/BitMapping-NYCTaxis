@@ -1,4 +1,4 @@
-//Michael Piechota (889378587)
+//Michael Piechota 
 //3/29/16
 //CS 546 Lab Assignment 2
 //Write a program based on the Week 5 Lab Exercise program B to read in the file of destinations and plot them on a bit map.

@@ -1,0 +1,18 @@
+The Problem
+
+The city of New York provides a monthly detailed listing of taxi rides within the five boroughs. Your assignment is to read in an extract of the destinations, which are provided in latitude and longitude. Each destination should be plotted as a point on a gray scale bit map.
+
+Since many trips will be to the same destination, the output should be in heat map format, where each pixel is coded brighter if it is visited many times, and set to zero (black) if it is not a destination.
+
+Write a program based on the Week 5 Lab Exercise program B to read in the file of destinations and plot them on a bit map. The dimensions should be 1024 by 1024 pixels. The background color should be black. The center point of the plot area should be latitude 40.765482, longitude -73.980006. (This the corner of 7th Avenue and West 57th Street, i.e. Carnegie Hall.) The southern boundary should be roughly 40.700455 and the northern boundary should be roughly 40.830509. The eastern and western boundaries will be proportionate to these.
+
+The processing steps are basically:
+
+Create a character array, 1024 by 1024 entries.
+Open the input file.
+Read in data. You will have to decide how much. Each longitude and latitude point will comprise two float values.
+Validate that the longitude and latitude are within the bounds of the bit map.
+Convert the longitude and latitude to a position within the bit map.
+Examine the current value at that position. If it is less than 255, add one to it.
+At the end of the input, write out the bit map headers, color map, and the bit map array itself.
+End the program.
